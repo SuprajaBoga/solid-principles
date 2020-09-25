@@ -1,22 +1,26 @@
 package com.principles.substitute;
 
-public abstract class Developer implements DisplayHike,GetTech{
-	public String name;
-	private double sal;
+public abstract class Developer implements IHike,ITechnologies{
+	public String developerName;
+	private double developerSalary;
 
-	public Developer(String name,double sal) {
-		this.name = name;
-		this.sal=sal;
-	}
-	public double getSal() {
-		return sal;
-	}
-
-	public void setSal(double sal) {
-		this.sal = sal;
+	public Developer(String developerName,double developerSalary) {
+		this.developerName = developerName;
+		this.developerSalary=developerSalary;
 	}
 	
+	
+	public double getDeveloperSalary() {
+		return developerSalary;
+	}
+
+
+	public void setDeveloperSalary(double developerSalary) {
+		this.developerSalary = developerSalary;
+	}
+
+
 	public abstract void displayHike();
-	public abstract void displayTech();
+	public abstract void displayTechnologies();
 	
 }

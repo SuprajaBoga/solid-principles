@@ -1,13 +1,13 @@
 package com.principles.substitute;
 
 public class DeveloperHike {
-	Developer d;
+	Developer developer;
 	public DeveloperHike() {}
 	public DeveloperHike(Developer d) {
-		this.d = d;
+		this.developer = developer;
 	}
 
 	public double calculateHike(double percent) {
-		return d.getSal() * (percent/100);
+		return developer.getDeveloperSalary() * (percent/100);
 	}
 }

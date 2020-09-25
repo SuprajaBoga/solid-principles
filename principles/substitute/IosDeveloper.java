@@ -1,23 +1,28 @@
 package com.principles.substitute;
 
-public class IosDeveloper implements GetTech{
+public class IosDeveloper implements ITechnologies{
 
-	public String name;
-	private double sal;
+	public String developerName;
+	private double developerSalary;
 
-	public IosDeveloper(String name , double sal) {
-		this.name = name;
-		this.sal = sal;
+	public IosDeveloper(String developerName , double developerSalary) {
+		this.developerName = developerName;
+		this.developerSalary = developerSalary;
 	}
-	public double getSal() {
-		return sal;
-	}
-	public void setSal(double sal) {
-		this.sal = sal;
+	
+
+	public double getDeveloperSalary() {
+		return developerSalary;
 	}
 
-	public void displayTech() {
-		System.out.println("Tech used by Android Developer " +name+" is Swift");
+
+	public void setDeveloperSalary(double developerSalary) {
+		this.developerSalary = developerSalary;
+	}
+
+
+	public void displayTechnologies() {
+		System.out.println("Tech used by Ios Developer " +developerName+" is Swift");
 		
 	}
 }

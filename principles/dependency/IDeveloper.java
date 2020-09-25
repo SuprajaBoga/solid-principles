@@ -1,5 +1,5 @@
 package com.principles.dependency;
 
-public interface Developer {
+public interface IDeveloper {
 	void develop();
 }

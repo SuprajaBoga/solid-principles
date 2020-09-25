@@ -1,5 +1,5 @@
 package com.principles.Interface;
 
-public interface DisplayCustomer {
+public interface ICustomer {
 	void displayCustomer();
 }
