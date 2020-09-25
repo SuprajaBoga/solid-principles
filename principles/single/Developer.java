@@ -1,23 +1,25 @@
 package com.principles.single;
 
 public class Developer{
-	public String name;
-	private double sal;
+	public String developerName;
+	private double developerSalary;
 
-	public Developer(String name,double sal) {
-		this.name = name;
-		this.sal=sal;
-	}
-	public double getSal() {
-		return sal;
+	public Developer(String developerName,double developerSalary) {
+		this.developerName = developerName;
+		this.developerSalary=developerSalary;
 	}
 
-	public void setSal(double sal) {
-		this.sal = sal;
+	public double getDeveloperSalary() {
+		return developerSalary;
 	}
-	
-	public String toString() {
-		return "Hike for Developer " +name+" is "+getSal();
+
+	public void setDeveloperSalary(double developerSalary) {
+		this.developerSalary = developerSalary;
+	}
+
+	public void displayDeveloperHike() {
+		System.out.println("Hike for Developer " +developerName+" is "+getDeveloperSalary());
+		
 	}
 	
 }

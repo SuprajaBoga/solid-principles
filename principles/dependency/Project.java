@@ -1,13 +1,13 @@
 package com.principles.dependency;
 
 public class Project {
-	Developer d;
+	IDeveloper developer;
 
-	public Project(Developer d) {
-		this.d = d;
+	public Project(IDeveloper developer) {
+		this.developer = developer;
 	}
 	public void develop() {
-		d.develop();
+		developer.develop();
 	}
 	
 }

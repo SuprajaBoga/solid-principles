@@ -1,13 +1,13 @@
 package com.principles.openclose;
 
 public class DeveloperHike {
-	Developer d;
+	Developer developer;
 	
-	public DeveloperHike(Developer d) {
-		this.d = d;
+	public DeveloperHike(Developer developer) {
+		this.developer = developer;
 	}
 
 	public double calculateHike(double percent) {
-		return d.getSal() * (percent/100);
+		return developer.getDeveloperSalary() * (percent/100);
 	}
 }

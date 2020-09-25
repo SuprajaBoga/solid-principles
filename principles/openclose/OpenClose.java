@@ -4,15 +4,15 @@ public class OpenClose {
 
 	public static void main(String[] args) {
 		
-		Developer androiddev= new AndroidDeveloper("developer",2000);
-		DeveloperHike hike = new DeveloperHike(androiddev);
-		androiddev.setSal(hike.calculateHike(40));
-		androiddev.displayHike();
+		Developer androidDeveloper= new AndroidDeveloper("developer",2000);
+		DeveloperHike hike = new DeveloperHike(androidDeveloper);
+		androidDeveloper.setDeveloperSalary(hike.calculateHike(40));
+		androidDeveloper.displayHike();
 		
-		Developer webdev= new WebDeveloper("developer",2000);
-		hike =new DeveloperHike(webdev);
-		webdev.setSal(hike.calculateHike(60));
-		webdev.displayHike();
+		Developer webDeveloper= new WebDeveloper("developer",2000);
+		hike =new DeveloperHike(webDeveloper);
+		webDeveloper.setDeveloperSalary(hike.calculateHike(60));
+		webDeveloper.displayHike();
 		
 	}
 

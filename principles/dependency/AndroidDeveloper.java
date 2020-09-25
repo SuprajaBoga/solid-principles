@@ -1,19 +1,19 @@
 package com.principles.dependency;
 
-public class AndroidDeveloper implements Developer {
+public class AndroidDeveloper implements IDeveloper {
 
 	@Override
 	public void develop() {
-		writeJava();
-		writeAndroidStudio();
+		displayJava();
+		displayAndroidStudio();
 	}
 
-	private void writeAndroidStudio() {
+	private void displayAndroidStudio() {
 		System.out.println("using android studio");
 		
 	}
 
-	private void writeJava() {
+	private void displayJava() {
 		System.out.println("using java");
 		
 	}

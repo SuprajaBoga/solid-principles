@@ -2,16 +2,17 @@ package com.principles.substitute;
 
 public class WebDeveloper extends Developer{
 	
-	public WebDeveloper(String name, double sal) {
-		super(name, sal);
+	public WebDeveloper(String developerName, double developerSalary) {
+		super(developerName, developerSalary);
 	}
 
 	public void displayHike() {
-		System.out.println("Hike for Web Developer " +name+" is "+getSal());
+		System.out.println("Hike for Web Developer " +developerName+" is "+getDeveloperSalary());
 	}
 
-	public void displayTech() {
-		System.out.println("Tech used by Android Developer " +name+" is HTML");
+	public void displayTechnologies() {
+		System.out.println("Tech used by Web Developer " +developerName+" is HTML");
 		
 	}
+
 }

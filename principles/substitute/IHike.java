@@ -1,5 +1,5 @@
 package com.principles.substitute;
 
-public interface DisplayHike {
+public interface IHike {
 	void displayHike();
 }

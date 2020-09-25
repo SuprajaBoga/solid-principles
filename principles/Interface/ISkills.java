@@ -1,5 +1,5 @@
 package com.principles.Interface;
 
-public interface DisplaySkills {
+public interface ISkills {
 	void displaySkills();
 }
